@@ -34,7 +34,7 @@ If you use **Vs Code** as your editor, please follow this steps to setup Eslint:
 
 ## Run the tests:
 
-1. On the root directory run `test:local:open`
+1. On the root directory run `cy:run`
 2. A Cypress window will open with two options, select **end to end**
 3. A new window will open with the feature files listed, click on the file you want to run
 4. A new window will show running the tests
