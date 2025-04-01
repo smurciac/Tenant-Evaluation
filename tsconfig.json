@@ -1,0 +1,25 @@
+{
+  "ts-node": {
+    "files": true
+  },
+  "compilerOptions": {
+    "target": "esnext",
+    "baseUrl": ".",
+    "lib": ["es2021", "dom", "ESNext.String"],
+    "types": [
+      "cypress",
+      "node",
+    ],
+    "allowSyntheticDefaultImports": true,
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
+    "esModuleInterop": true,
+    "paths": {
+      "@utils": ["cypress/support/utils"],
+      "@fixtures/*":["cypress/fixtures/*"],
+      "@pages": ["cypress/support/pages"],
+    }
+  },
+  "include": ["**/**/*.ts", "./cypress.d.ts"],
+  "exclude": ["node_modules"]
+}

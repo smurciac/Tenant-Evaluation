@@ -1,0 +1,12 @@
+# Node
+node_modules
+package-lock.json
+
+# Cypress
+cypress/results/
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# Reports
+results

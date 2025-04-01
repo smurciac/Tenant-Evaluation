@@ -1,0 +1,34 @@
+{
+  "name": "tenant-evaluation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --fix",
+    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smurciac/Tenant-Evaluation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smurciac/Tenant-Evaluation/issues"
+  },
+  "homepage": "https://github.com/smurciac/Tenant-Evaluation#readme",
+  "description": "",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.29.0",
+    "cypress": "^14.2.1",
+    "dotenv": "^16.4.7",
+    "eslint": "^9.23.0",
+    "eslint-plugin-chai-friendly": "^1.0.1",
+    "eslint-plugin-cypress": "^4.2.0",
+    "eslint-plugin-prettier": "^5.2.5",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "globals": "^16.0.0",
+    "typescript": "^5.8.2"
+  }
+}

@@ -1,0 +1,38 @@
+# name: e2e_chrome
+
+# on: push
+
+#   # repository_dispatch:
+#   #   types: [on-demand-test]
+
+# jobs:
+#   cypress-run:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v4.1.1
+
+#       - name: Use Node.js 22.11.0
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: 22.11.0
+
+#       - name: Cypress run
+#         uses: cypress-io/github-action@v6.0.0
+#         env:
+#           RUN_NUMBER: ${{ github.run_number }}
+#           RUN_ID: ${{ github.run_id }}
+#           REPOSITORY: ${{github.repository}}
+#         with:
+#           project: ./
+#           browser: chrome
+
+#       - name: Publish Test Summary Results
+#         if: success() || failure()
+#         run: npx {{COMMAND_FOR_RETPORT}}
+
+#       - name: Send results to slack
+#         if: success() || failure()
+#         env:
+#           SLACK_WEBHOOK_URL: ${{secrets.SLACK_WEBHOOK_URL}}
+#         run: npx {{COMMAND_TO_SEND_SLACK_MESSAGE}}
